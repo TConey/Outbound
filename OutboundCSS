@@ -1,5 +1,26 @@
  <style>
-/* The Modal (background) */
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collcontent {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -13,8 +34,6 @@
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-
-/* Modal Content */
 .modal-content {
   background-color: #fefefe;
   margin: auto;
@@ -22,8 +41,6 @@
   border: 1px solid #888;
   width: 80%;
 }
-
-/* The Close Button */
 .close {
   color: #aaaaaa;
   float: right;
@@ -36,5 +53,294 @@
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9*/
+  position: relative;
+}
+
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+sub, sup {
+    font-size: 100%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+       
+}
+.datagrid td, .datagrid th {
+    empty-cells: show;
+    white-space: inherit;
+    padding: 0px 0px;
+    font-size: x-small;
+    text-align: left;
+    padding: 2px 5px 2px 5px;
+    vertical-align: middle;
+}
+#somediv {
+    position: relative;
+    left: 434px;
+    top: -26px;
+}  
+#fxTrk{
+position: relative;
+    left: 479px;
+    top: -26px;
+}
+.secbase.tab-sec.container>.content {
+    padding: 0px;
+    top: -60px;
+}
+.secbase.grd-sec .grid_container {
+    margin-top: 0px;
+    position: relative;
+    width: auto;
+    top: -15px;
+}
+.secbase .links_container {
+    height: 27px;
+    padding: 0;
+    background-color: #ddd0;
+}
+#myBtn{
+position: relative;
+    top: 2px;
+}
+#Tb4 > tbody > tr > td:nth-child(1) > p{
+    top: -9px;
+    position: relative;
+    text-align: right;
+    vertical-align: top;
+    padding-top: 1px;
+    float: left;
+    font: bold 13px Open Sans;
+    text-decoration: underline;
+}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 3px 16px;
+    transition: 0.3s;
+    font-size: 13px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+#Details{
+display: block;
+}
+.dropbtn {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 7px;
+    font-size: 11px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #5c829a;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+.msgContents{
+display: none;
+}
+#fld_Tracking > .fieldarea-field {
+width:82%;
+border: none;
+background-color: white;
+}
+
+#fld_Tracking > .fieldarea-caption{
+width:18%;
+display: none;
+}
+div.tab-content {
+    border: 1px solid #d7dcde;
+    background: white;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    zoom: 90%;
+}
+#GLGridContainer {
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    padding: 10px;
+}
+#stsGridContainer {
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    padding: 10px;
+}
+#stsReq{
+    font-size: larger;
+    background-color: #6f6b6b;
+    color: white;
+    padding: 6px;
+    vertical-align: super;
+    border-color: #0e0909;
+    border-style: solid;
+    border-width: thin;
+}
+#GLRequest{
+padding-bottom: 11px;
+}
+.modalBtn{
+    position: relative;
+    top: 21px;
+    left: 82px;
+    z-index: 1;
+    background: transparent;
+    border-style: none;
+}
+#embSendMail{
+height:500px;
+}
+.dropbtn {
+  background-color: #3ab83c;
+  color: white;
+  padding: 0px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #5c829a;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+.carat{
+    margin: 0px;
+    transform: rotate(180deg);
+    text-decoration-style: wavy;
+    font-weight: bolder;
+    font-size: large;
+}
+
+element.style {
+    width: 18%;
+}
+.detpage .fieldarea-caption {
+    display: none;
+}
+h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    text-align: left;
+}
+.detpage .fieldarea-field {
+    text-align: left;
+    vertical-align: top;
+    float: left;
+    min-height: 32px;
+}
+.secbase.secbase-raven>.header .main>.title-container {
+    display: none;
+}
+.fieldarea-field select, .fieldarea-field select[multiple] {
+width:100%;
 }
   </style>
