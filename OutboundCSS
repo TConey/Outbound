@@ -1,3 +1,4 @@
+<style>
 .collapsible {
   background-color: #777;
   color: white;
@@ -342,3 +343,4 @@ h1 {
 .fieldarea-field select, .fieldarea-field select[multiple] {
 width:100%;
 }
+</style>
